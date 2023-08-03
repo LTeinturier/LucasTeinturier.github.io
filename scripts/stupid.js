@@ -1,4 +1,6 @@
-// module.exports = {'wink':wink()}
+// These functions are pasted from this repo here:
+// https://github.com/WeiChiaChang/easter-egg-collection/blob/master/index.js
+// All credits to that genius
 wink()
 nyancat()
 function wink () {
