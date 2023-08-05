@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lucas Teinturier/mapping</title>
+<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<!-- body of the page -->
+
+<body>
+    <div class="w3-sand w3-grayscale w3-large">
+        <div class="w3-container" id="aboutme">
+            <div class="w3-content" style="max-width:700px">
+              <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Mapping the Surface of Partially Cloudy Exoplanets is Hard</span></h5>
+              <p> In this work, we tackle the issue of inferring the albedo surface map of terrestrial exoplanets, directly from their reflected lightcurve. This is a challenging task,
+                 as this problem is degenerated, in the sense that multiple maps can yield indistinguishable lightcurves. </p>
+              <p> Moreover, planetary atmosphere are expected to host clouds, changing with time and location, aggravating the complexity of the problem. 
+                 In this work, we use observations spanning multiple days to try to recover a cloud-free surface albedo map. </p>
+
+              <p> We demonstrate this technique as part of a Bayesian retrieval by simultaneously fitting for the fixed surface map of a planet and the time-variable overlying clouds.
+                 We test this approach on synthetic data and then apply it to real disc-integrated observations of the Earth. </p>
+
+              <!-- <img src="images/mapping_is_hard.pdf" style="width:100%;max-width:1000px" class="w3-margin-top">   -->
+              <figure>
+                <img src='images/mapping_is_hard.png' alt='missing' style="width:100%;max-width:1000px" class="w3-margin-top" />
+                <figcaption><i>Caption: </i>Schematic description of the different steps of our numerical experiment, from producing the synthetic light curves to the MCMC retrieval of the
+                    surface albedo and time-varying clouds maps, Δ𝐴. We only show days 1 and 8 in this illustration but the surface map is fitted using all eight days of data. ATOA
+                    stands for the top-of-atmosphere albedo map.</figcaption>
+            </figure>
+
+              <p> We find that 8 days of continuous synthetic observations are sufficient to reconstruct a faithful low-resolution surface albedo map,
+                 without needing to make assumptions about cloud physics. For light curves with negligible photometric uncertainties,
+                 the minimal top-of-atmosphere albedo at a location is a good estimate of its surface albedo.
+                 When applied to observations from the Earth Polychromating Imaging Camera aboard the Deep Space Climate Observatory spacecraft,
+                 our approach removes only a small fraction of clouds. </p>
+
+              <p> We attribute this difficulty to the full-phase geometry of observations combined with the short correlation length for Earth clouds.
+                 For exoplanets with Earth-like climatology, it may be hard to do much better than a cloud-averaged map.
+                 We surmise that cloud removal will be most successful for exoplanets imaged near quarter phase that harbour large cloud systems.</p>  
+        
+                 <p> Here is the link to the <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.511..440T/abstract" target ="_blank" rel = "noopener noreferrer" class=" button primary icon ">publication</a>
+                     . Don't hesitate to contact me if you have questions, or if you want to discuss it !</p>
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css (and my brain, a bit)</a></p>
+  </footer>
+</body>
+</html>
